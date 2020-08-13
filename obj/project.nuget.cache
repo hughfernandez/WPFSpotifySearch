@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "2n37Ld3VUgVtIfHgfbYI8ksOnBYlJksJ5unEEM+a5MauPjnzvdNfZI5HglTFqZMcDj+b/DJgn0ksdKuzjxg5Ww==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\SpotifyWPFSearch.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AorusDEV\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\AorusDEV\\.nuget\\packages\\restsharp\\106.11.4\\restsharp.106.11.4.nupkg.sha512"
+  ],
+  "logs": []
+}
