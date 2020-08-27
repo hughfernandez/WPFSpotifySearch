@@ -85,11 +85,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\SpotifyWPFSearch.csproj",
+      "projectUniqueName": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\WPFSpotifySearch\\SpotifyWPFSearch.csproj",
       "projectName": "SpotifyWPFSearch",
-      "projectPath": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\SpotifyWPFSearch.csproj",
+      "projectPath": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\WPFSpotifySearch\\SpotifyWPFSearch.csproj",
       "packagesPath": "C:\\Users\\AorusDEV\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\obj\\",
+      "outputPath": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\WPFSpotifySearch\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",
