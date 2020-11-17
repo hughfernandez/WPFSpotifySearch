@@ -7,6 +7,12 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Assets\ScrollbarStyleDictionary.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Assets\Styles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>

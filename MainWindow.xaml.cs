@@ -5,22 +5,28 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace SpotifyWPFSearch
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+            titleBar.MouseLeftButtonDown += (o, e) => DragMove();            
+
             Task.Run(async () => await SearchHelper.GetTokenAsync());
         }
 
         private void txtSearch_KeyUp(object sender, KeyEventArgs e)
         {
+            if (txtSearch.Text == string.Empty)
+            {
+                ListArtist.ItemsSource = null;
+                return;
+            }
+
             var result = SearchHelper.SearchArtistOrSong(txtSearch.Text);
 
             if (result == null)
@@ -43,6 +49,26 @@ namespace SpotifyWPFSearch
             }
 
             ListArtist.ItemsSource = listArtist;
+        }
+
+        private void ButtomExit(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void ButtonMinimizeClick(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void ButtonMinimizeMouseEnter(object sender, MouseEventArgs e)
+        {
+            ButtonMinimize.Background = new SolidColorBrush(Colors.Yellow);
+        }
+
+        private void ButtonExitMouseEnter(object sender, MouseEventArgs e)
+        {
+            ButtonExit.Background = new SolidColorBrush(Colors.Red);
         }
     }
 }

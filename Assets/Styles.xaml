@@ -1,0 +1,78 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <FontFamily x:Key="Gotham">pack://application:,,,/Assets/#HomepageBaukasten Book</FontFamily>
+    <FontFamily x:Key="Neitherly">pack://application:,,,/Assets/#Neitherly Demo Light</FontFamily>
+    <FontFamily x:Key="NeitherlyScript">pack://application:,,,/Assets/#Neitherly Demo Script</FontFamily>
+
+    <SolidColorBrush x:Key="BackgroundColorWindow1" Color="#121212" />
+    <SolidColorBrush x:Key="BackgroundColorWindow2" Color="#3C3C3C" />
+    <SolidColorBrush x:Key="FontColorBasic" Color="White" />
+
+    <Style TargetType="Button">
+        <Setter Property="Width" Value="16" />
+        <Setter Property="Height" Value="16" />
+        <Setter Property="Margin" Value="5" />
+    </Style>
+
+    <Style x:Key="TextBoxSearch" TargetType="TextBox">
+        <Setter Property="Width" Value="200" />
+        <Setter Property="FontSize" Value="20" />
+    </Style>
+
+    <ControlTemplate x:Key="TextBoxBaseControlTemplate" TargetType="TextBoxBase">
+        <Border
+            x:Name="Bd"
+            Background="{TemplateBinding Background}"
+            BorderBrush="Black"
+            BorderThickness="{TemplateBinding BorderThickness}"
+            CornerRadius="10">
+            <ScrollViewer x:Name="PART_ContentHost" Margin="5,0" />
+        </Border>
+
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter TargetName="Bd" Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
+                <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}" />
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+
+    <Style TargetType="TextBlock">
+        <Setter Property="TextElement.FontFamily" Value="{StaticResource Gotham}" />
+        <Setter Property="Foreground" Value="{StaticResource FontColorBasic}" />
+    </Style>
+
+    <DataTemplate x:Key="ListArtistTemplate">
+        <StackPanel Orientation="Horizontal">
+            <Image
+                Width="180"
+                Height="180"
+                Margin="5"
+                Source="{Binding Image}" />
+            <StackPanel Margin="20" VerticalAlignment="Center">
+                <TextBlock
+                    MaxWidth="500"
+                    FontSize="46"
+                    Text="{Binding Name}"
+                    TextTrimming="CharacterEllipsis">
+                    <TextBlock.ToolTip>
+                        <StackPanel>
+                            <TextBlock
+                                FontSize="20"
+                                Foreground="Black"
+                                Text="{Binding Name}" />
+                        </StackPanel>
+                    </TextBlock.ToolTip>
+                </TextBlock>
+                <TextBlock FontSize="30" Text="{Binding Popularity}" />
+                <TextBlock
+                    FontFamily="{StaticResource NeitherlyScript}"
+                    FontSize="20"
+                    Text="{Binding Followers}" />
+            </StackPanel>
+        </StackPanel>
+    </DataTemplate>
+
+
+
+</ResourceDictionary>
