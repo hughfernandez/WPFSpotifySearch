@@ -1,11 +1,13 @@
 ﻿using SpotifyWPFSearch.Helpers;
 using SpotifyWPFSearch.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
+using System.Windows.Threading;
 
 namespace SpotifyWPFSearch
 {
@@ -17,13 +19,45 @@ namespace SpotifyWPFSearch
             titleBar.MouseLeftButtonDown += (o, e) => DragMove();            
 
             Task.Run(async () => await SearchHelper.GetTokenAsync());
+
+            _searchTimer = new DispatcherTimer();
+            _searchTimer.Interval = TimeSpan.FromSeconds(1);
+            _searchTimer.Tick += OnSearchTimerTick;
         }
 
-        private void txtSearch_KeyUp(object sender, KeyEventArgs e)
+        private DispatcherTimer _searchTimer;
+
+        private void OnSearchTimerTick(object sender, EventArgs e)
         {
-            if (txtSearch.Text == string.Empty)
+            _searchTimer.Stop();
+            Search();
+        }
+
+
+        private void ButtomExit(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
+
+        private void ButtonMinimizeClick(object sender, RoutedEventArgs e)
+        {
+            WindowState = WindowState.Minimized;
+        }
+
+        private void ButtonMinimizeMouseEnter(object sender, MouseEventArgs e)
+        {
+            ButtonMinimize.Background = new SolidColorBrush(Colors.Yellow);
+        }
+
+        private void ButtonExitMouseEnter(object sender, MouseEventArgs e)
+        {
+            ButtonExit.Background = new SolidColorBrush(Colors.Red);
+        }
+
+        private void Search()
+        {
+            if (string.IsNullOrEmpty(txtSearch.Text))
             {
-                ListArtist.ItemsSource = null;
                 return;
             }
 
@@ -51,24 +85,11 @@ namespace SpotifyWPFSearch
             ListArtist.ItemsSource = listArtist;
         }
 
-        private void ButtomExit(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Shutdown();
-        }
 
-        private void ButtonMinimizeClick(object sender, RoutedEventArgs e)
+        private void txtSearch_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
-            WindowState = WindowState.Minimized;
-        }
-
-        private void ButtonMinimizeMouseEnter(object sender, MouseEventArgs e)
-        {
-            ButtonMinimize.Background = new SolidColorBrush(Colors.Yellow);
-        }
-
-        private void ButtonExitMouseEnter(object sender, MouseEventArgs e)
-        {
-            ButtonExit.Background = new SolidColorBrush(Colors.Red);
+            _searchTimer.Stop();
+            _searchTimer.Start();
         }
     }
 }

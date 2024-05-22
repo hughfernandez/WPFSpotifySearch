@@ -43,8 +43,9 @@ namespace SpotifyWPFSearch.Helpers
         {
             var client = new RestClient("https://api.spotify.com/v1/search");
             client.AddDefaultHeader("Authorization", $"Bearer {token.access_token}");
-            var request = new RestRequest($"?q={searchWord}&type=artist", Method.GET);
-            var response = client.Execute(request);
+            var request = new RestRequest($"?q={searchWord}&type=artist", Method.Get);
+            var response = client.Execute<SpotifyResult>(request);
+
 
             if (response.IsSuccessful)
             {

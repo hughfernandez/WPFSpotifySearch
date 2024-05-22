@@ -12,6 +12,7 @@
     AllowsTransparency="True"
     Background="Transparent"
     ResizeMode="NoResize"
+    WindowStartupLocation="CenterScreen"
     WindowStyle="None">
 
     <Border Margin="10">
@@ -69,9 +70,8 @@
                         Orientation="Horizontal">
                         <TextBox
                             x:Name="txtSearch"
-                            KeyUp="txtSearch_KeyUp"
                             Style="{StaticResource TextBoxSearch}"
-                            Template="{StaticResource TextBoxBaseControlTemplate}" />
+                            Template="{StaticResource TextBoxBaseControlTemplate}" TextChanged="txtSearch_TextChanged" />
                     </StackPanel>
                     <ListView
                         x:Name="ListArtist"

@@ -1,29 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\WPFSpotifySearch\\SpotifyWPFSearch.csproj": {}
+    "C:\\Users\\ryant\\Desktop\\Open Source\\WPFSpotifySearch\\SpotifyWPFSearch.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\WPFSpotifySearch\\SpotifyWPFSearch.csproj": {
+    "C:\\Users\\ryant\\Desktop\\Open Source\\WPFSpotifySearch\\SpotifyWPFSearch.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\WPFSpotifySearch\\SpotifyWPFSearch.csproj",
+        "projectUniqueName": "C:\\Users\\ryant\\Desktop\\Open Source\\WPFSpotifySearch\\SpotifyWPFSearch.csproj",
         "projectName": "SpotifyWPFSearch",
-        "projectPath": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\WPFSpotifySearch\\SpotifyWPFSearch.csproj",
-        "packagesPath": "C:\\Users\\AorusDEV\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AorusDEV\\source\\repos\\SpotifyWPFSearch\\WPFSpotifySearch\\obj\\",
+        "projectPath": "C:\\Users\\ryant\\Desktop\\Open Source\\WPFSpotifySearch\\SpotifyWPFSearch.csproj",
+        "packagesPath": "C:\\Users\\ryant\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ryant\\Desktop\\Open Source\\WPFSpotifySearch\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\AorusDEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\ryant\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net5.0-windows7.0"
+          "net5.0-windows"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -39,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -47,11 +47,11 @@
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
-              "version": "[12.0.3, )"
+              "version": "[13.0.3, )"
             },
             "RestSharp": {
               "target": "Package",
-              "version": "[106.11.7, )"
+              "version": "[111.0.0, )"
             }
           },
           "imports": [
@@ -60,7 +60,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -72,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.205\\RuntimeIdentifierGraph.json"
         }
       }
     }
