@@ -26,3 +26,36 @@ C:\Users\AorusDEV\source\repos\SpotifyWPFSearch\WPFSpotifySearch\obj\Debug\net5.
 C:\Users\AorusDEV\source\repos\SpotifyWPFSearch\WPFSpotifySearch\obj\Debug\net5.0-windows\Assets\Styles.baml
 C:\Users\AorusDEV\source\repos\SpotifyWPFSearch\WPFSpotifySearch\obj\Debug\net5.0-windows\Assets\ScrollbarStyleDictionary.baml
 C:\Users\AorusDEV\source\repos\SpotifyWPFSearch\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.csprojAssemblyReference.cache
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\SpotifyWPFSearch.exe
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\SpotifyWPFSearch.deps.json
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\SpotifyWPFSearch.runtimeconfig.json
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\SpotifyWPFSearch.runtimeconfig.dev.json
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\SpotifyWPFSearch.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\SpotifyWPFSearch.pdb
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\Newtonsoft.Json.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\RestSharp.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.csproj.AssemblyReference.cache
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\Assets\Styles.baml
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\MainWindow.g.cs
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\App.g.cs
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch_MarkupCompile.cache
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch_MarkupCompile.lref
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\App.baml
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\Assets\ScrollbarStyleDictionary.baml
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\MainWindow.baml
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.g.resources
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.AssemblyInfoInputs.cache
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.AssemblyInfo.cs
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.csproj.CoreCompileInputs.cache
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.sourcelink.json
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyW.9B66ABCC.Up2Date
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\refint\SpotifyWPFSearch.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.pdb
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\SpotifyWPFSearch.genruntimeconfig.cache
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\obj\Debug\net5.0-windows\ref\SpotifyWPFSearch.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\System.Text.Encodings.Web.dll
+C:\Users\ryant\Desktop\Open Source\WPFSpotifySearch\bin\Debug\net5.0-windows\System.Text.Json.dll
